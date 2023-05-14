@@ -5,12 +5,12 @@ import {
   ShareOutlined,
 } from "@mui/icons-material";
 import { Box, Divider, IconButton, Typography, useTheme } from "@mui/material";
-import FlexBetween from "components/FlexBetween";
-import Friend from "components/Friend";
-import WidgetWrapper from "components/WidgetWrapper";
+import FlexBetween from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/FlexBetween.jsx";
+import Friend from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/Friend.jsx";
+import WidgetWrapper from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/WidgetWrapper.jsx";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setPost } from "state";
+import { setPost } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state";
 
 const PostWidget = ({
   postId,

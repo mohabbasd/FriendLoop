@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import User from "../models/User.js";
+import User from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/server/models/User.js";
 
 /* RESGITERED USER */
 
@@ -40,26 +40,25 @@ export const register = async (req, res) => {
 };
 
 /* LOGGING IN */
-
+const JWT_SECRET = "somesuperhardstringtoguess"
 export const login = async (req, res) => {
     try {
+        console.log('Request body:', req.body);
         const { email, password } = req.body;
-
-        const user = await User.findOne({ email: email }); 
-        if(!user){
-            return res.status(400).json({msg: "User does not exist. "});
-        }
-
+        console.log('Email:', email, 'Password:', password);
+        const user = await User.findOne({ email: email });
+        console.log('User:', user);
+        if (!user) return res.status(400).json({ msg: "User does not exist. " });
+    
         const isMatch = await bcrypt.compare(password, user.password);
-        if(!isMatch){
-            return res.status(400).json({msg: "Invalid credentials."});
-        }
-
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-        delete user.password;
-        res.status(200).json({ token, user });
-
+        console.log('Is match:', isMatch);
+        if (!isMatch) return res.status(400).json({ msg: "Invalid credentials. " });
+    
+  
+      const token = jwt.sign({ id: user._id }, JWT_SECRET);
+      delete user.password;
+      res.status(200).json({ token, user });
     } catch (err) {
-        res.status(500).json({error: err.message});
+      res.status(500).json({ error: err.message });
     }
 }

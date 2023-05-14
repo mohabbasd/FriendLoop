@@ -5,9 +5,9 @@ import {
   WorkOutlineOutlined,
 } from "@mui/icons-material";
 import { Box, Typography, Divider, useTheme } from "@mui/material";
-import UserImage from "components/UserImage";
-import FlexBetween from "components/FlexBetween";
-import WidgetWrapper from "components/WidgetWrapper";
+import UserImage from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/UserImage.jsx";
+import FlexBetween from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/FlexBetween.jsx";
+import WidgetWrapper from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/WidgetWrapper.jsx";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

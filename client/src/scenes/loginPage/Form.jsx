@@ -12,9 +12,9 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setLogin } from "state";
+import { setLogin } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state";
 import Dropzone from "react-dropzone";
-import FlexBetween from "components/FlexBetween";
+import FlexBetween from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/FlexBetween.jsx";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -81,7 +81,6 @@ const Form = () => {
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
     });
     const loggedIn = await loggedInResponse.json();

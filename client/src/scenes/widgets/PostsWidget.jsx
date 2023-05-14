@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setPosts } from "state";
-import PostWidget from "./PostWidget";
+import { setPosts } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state";
+import PostWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/PostWidget.jsx";
 
 const PostsWidget = ({ userId, isProfile = false }) => {
   const dispatch = useDispatch();

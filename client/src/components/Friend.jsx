@@ -2,9 +2,9 @@ import { PersonAddOutlined, PersonRemoveOutlined } from "@mui/icons-material";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { setFriends } from "state";
-import FlexBetween from "./FlexBetween";
-import UserImage from "./UserImage";
+import { setFriends } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state/index.js";
+import FlexBetween from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/FlexBetween.jsx";
+import UserImage from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/Friend.jsx";
 
 const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const dispatch = useDispatch();

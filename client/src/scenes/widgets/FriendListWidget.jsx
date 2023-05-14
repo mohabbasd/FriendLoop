@@ -1,9 +1,9 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import Friend from "components/Friend";
-import WidgetWrapper from "components/WidgetWrapper";
+import Friend from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/Friend.jsx";
+import WidgetWrapper from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/WidgetWrapper.jsx";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setFriends } from "state";
+import { setFriends } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state";
 
 const FriendListWidget = ({ userId }) => {
   const dispatch = useDispatch();

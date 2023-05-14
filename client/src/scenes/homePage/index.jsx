@@ -1,11 +1,11 @@
 import { Box, useMediaQuery } from "@mui/material";
 import { useSelector } from "react-redux";
-import Navbar from "scenes/navbar";
-import UserWidget from "scenes/widgets/UserWidget";
-import MyPostWidget from "scenes/widgets/MyPostWidget";
-import PostsWidget from "scenes/widgets/PostsWidget";
-import AdvertWidget from "scenes/widgets/AdvertWidget";
-import FriendListWidget from "scenes/widgets/FriendListWidget";
+import Navbar from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/navbar";
+import UserWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/UserWidget.jsx";
+import MyPostWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/MyPostWidget.jsx";
+import PostsWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/PostsWidget.jsx";
+import AdvertWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/AdvertWidget.jsx";
+import FriendListWidget from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/scenes/widgets/FriendListWidget.jsx";
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");

@@ -17,13 +17,13 @@ import {
   IconButton,
   useMediaQuery,
 } from "@mui/material";
-import FlexBetween from "components/FlexBetween";
+import FlexBetween from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/FlexBetween.jsx";
 import Dropzone from "react-dropzone";
-import UserImage from "components/UserImage";
-import WidgetWrapper from "components/WidgetWrapper";
+import UserImage from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/UserImage.jsx";
+import WidgetWrapper from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/components/WidgetWrapper.jsx";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setPosts } from "state";
+import { setPosts } from "/Users/mohammadabbas/Desktop/Web Projects/MERN Project/friendloop/client/src/state";
 
 const MyPostWidget = ({ picturePath }) => {
   const dispatch = useDispatch();
